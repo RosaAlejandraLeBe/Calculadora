@@ -34,11 +34,11 @@
 
             <EditText
                 android:id="@+id/txtResultado"
-                android:layout_width="318dp"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
                 android:autofillHints=""
                 android:ems="10"
-                android:gravity="center|right"
+                android:gravity="center|fill_horizontal"
                 android:inputType="textPersonName"
                 android:text="@string/name"
                 android:textSize="45sp" />
@@ -52,23 +52,35 @@
             <Button
                 android:id="@+id/btnPotencia"
                 style="@style/CalculatorButton"
+                android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:text="@string/potencia" />
+                android:background="@drawable/botton"
+                android:text="@string/potencia"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnRaiz"
+                android:layout_width="match_parent"
                 style="@style/CalculatorButton"
-                android:text="@string/raiz" />
+                android:background="@drawable/botton"
+                android:text="@string/raiz"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnBorrar"
+                android:layout_width="match_parent"
                 style="@style/CalculatorButton"
-                android:text="@string/del" />
+                android:background="@drawable/botton"
+                android:text="@string/del"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnLimpiar"
+                android:layout_width="match_parent"
                 style="@style/CalculatorButton"
-                android:text="@string/ac" />
+                android:background="@drawable/botton"
+                android:text="@string/ac"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
@@ -80,22 +92,34 @@
                 android:id="@+id/btn7"
                 style="@style/CalculatorButton"
                 android:layout_weight="1"
-                android:text="@string/_7" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_7"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn8"
                 style="@style/CalculatorButton"
-                android:text="@string/_8" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_8"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn9"
                 style="@style/CalculatorButton"
-                android:text="@string/_9" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_9"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnDiv"
                 style="@style/CalculatorButton"
-                android:text="@string/division" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/division"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -108,22 +132,34 @@
                 android:id="@+id/btn4"
                 style="@style/CalculatorButton"
                 android:layout_weight="1"
-                android:text="@string/_4" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_4"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn5"
                 style="@style/CalculatorButton"
-                android:text="@string/_5" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_5"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn6"
                 style="@style/CalculatorButton"
-                android:text="@string/_6" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_6"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnMulti"
                 style="@style/CalculatorButton"
-                android:text="@string/multiplicacion" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/multiplicacion"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
@@ -135,22 +171,34 @@
                 android:id="@+id/btn1"
                 style="@style/CalculatorButton"
                 android:layout_weight="1"
-                android:text="@string/_1" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_1"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn2"
                 style="@style/CalculatorButton"
-                android:text="@string/_2" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_2"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn3"
                 style="@style/CalculatorButton"
-                android:text="@string/_3" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/_3"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnMenos"
                 style="@style/CalculatorButton"
-                android:text="@string/menos" />
+                android:layout_width="match_parent"
+                android:background="@drawable/botton"
+                android:text="@string/menos"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -163,22 +211,34 @@
                 android:id="@+id/btnPunto"
                 style="@style/CalculatorButton"
                 android:layout_weight="1"
-                android:text="@string/punto" />
+                android:background="@drawable/botton"
+                android:layout_width="match_parent"
+                android:text="@string/punto"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn0"
                 style="@style/CalculatorButton"
-                android:text="@string/_0" />
+                android:background="@drawable/botton"
+                android:layout_width="match_parent"
+                android:text="@string/_0"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnIgual"
                 style="@style/CalculatorButton"
-                android:text="@string/igual" />
+                android:background="@drawable/botton"
+                android:layout_width="match_parent"
+                android:text="@string/igual"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnMas"
                 style="@style/CalculatorButton"
-                android:text="@string/mas" />
+                android:background="@drawable/botton"
+                android:layout_width="match_parent"
+                android:text="@string/mas"
+                android:textStyle="bold" />
 
         </TableRow>
     </TableLayout>

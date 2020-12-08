@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         txtResultado = findViewById<View>(R.id.txtResultado) as TextView
         var btn0 = findViewById<View>(R.id.btn0) as Button
         var btn1 = findViewById<View>(R.id.btn1) as Button
@@ -64,8 +63,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnBorrar.setOnClickListener(this)
         btnPunto.setOnClickListener(this)
         btnLimpiar.setOnClickListener (this)
-    }
 
+    }
 
     override fun onClick(v:View){
         when(v.id){
@@ -80,12 +79,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnIgual -> resultado()
             R.id.btnPunto -> punto(v)
         }
+
     }
 
     fun numero(v: View) {
         Dato = v as Button
         ValorA = ValorA + Dato!!.text
         txtResultado.setText( ValorA)
+        Toast.makeText(this, "Se hizo click en un número", Toast.LENGTH_SHORT).show()
     }
 
     fun boton(v: View) {
@@ -94,12 +95,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         ValorB = ValorA
         ValorA = ""
         txtResultado.setText("")
+        Toast.makeText(this, "Se hizo click en una operación", Toast.LENGTH_SHORT).show()
     }
 
     fun limpiar() {
         ValorA = ""
         ValorB = ""
         txtResultado.setText("")
+        Toast.makeText(this, "Se borra", Toast.LENGTH_SHORT).show()
     }
 
     fun resultado(){
@@ -122,6 +125,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         txtResultado!!.text = resultado.toString()
         ValorA = resultado.toString()
         ValorB = ""
+        Toast.makeText(this, "Se muestra resultado", Toast.LENGTH_SHORT).show()
     }
 
     fun punto(v: View) {
@@ -133,6 +137,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         } else if (a % 1 != 0.0) {
             Punto = true
         }
+        Toast.makeText(this, "Punto para numero decimal", Toast.LENGTH_SHORT).show()
     }
-
 }
